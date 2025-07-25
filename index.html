@@ -1,0 +1,102 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday ❤️</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100 font-sans">
+  <div class="min-h-screen flex flex-col justify-center items-center text-center p-8">
+    <h1 class="text-5xl font-bold text-pink-600 mb-4">Happy Birthday My Love! 🎉</h1>
+    <p class="text-lg text-gray-700 mb-6 max-w-xl">Every moment with you is a memory I cherish. This website is a small gift filled with love, smiles, and sweet surprises 💖</p>
+    <img src="https://via.placeholder.com/200" alt="Your Love" class="rounded-full shadow-lg mb-6 w-48 h-48 object-cover">
+    <a href="memories.html" class="px-6 py-3 bg-pink-500 text-white font-semibold rounded-full shadow hover:bg-pink-600 transition">Start the Journey ➡️</a>
+  </div>
+</body>
+</html>
+
+<!-- memories.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Memories 📸</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-rose-100">
+  <div class="p-8 text-center">
+    <h2 class="text-4xl font-bold text-rose-600 mb-6">Memories We Created Together ❤️</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="https://via.placeholder.com/300" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/300" class="rounded-lg shadow-lg">
+      <img src="https://via.placeholder.com/300" class="rounded-lg shadow-lg">
+    </div>
+    <a href="reasons.html" class="mt-8 inline-block px-6 py-3 bg-pink-500 text-white rounded-full font-semibold shadow hover:bg-pink-600">Why I Love You 💕</a>
+  </div>
+</body>
+</html>
+
+<!-- reasons.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are Amazing ✨</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-center">
+  <div class="p-8">
+    <h2 class="text-4xl font-bold text-pink-700 mb-6">Reasons Why You’re So Special 💖</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Smile</h3>
+        <p class="text-gray-700">It brightens even my darkest days.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Heart</h3>
+        <p class="text-gray-700">You're kind, caring, and incredibly loving.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Your Strength</h3>
+        <p class="text-gray-700">You inspire me every single day.</p>
+      </div>
+    </div>
+    <a href="surprise.html" class="mt-10 inline-block px-6 py-3 bg-pink-500 text-white rounded-full font-semibold shadow hover:bg-pink-600">Final Surprise 🎁</a>
+  </div>
+</body>
+</html>
+
+<!-- surprise.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Surprise 🎉</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-rose-100 to-pink-200 text-center">
+  <div class="min-h-screen flex flex-col justify-center items-center p-8">
+    <h2 class="text-4xl font-bold text-pink-700 mb-4">My Final Birthday Wish For You 🎂</h2>
+    <p class="text-lg text-gray-700 max-w-xl mb-6">You deserve all the love, joy, and happiness this world has to offer. I’m lucky to have you, and I promise to keep making you smile. 💝</p>
+    <button onclick="launchConfetti()" class="px-6 py-3 bg-pink-500 text-white rounded-full font-semibold shadow hover:bg-pink-600">Celebrate With Me 🎊</button>
+    <p class="mt-6 text-sm text-gray-500">Made with ❤️ by someone who adores you.</p>
+  </div>
+
+  <script>
+    function launchConfetti() {
+      confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ff6b81', '#ff9ff3', '#feca57', '#48dbfb']
+      });
+    }
+  </script>
+</body>
+</html>

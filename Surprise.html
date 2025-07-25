@@ -1,0 +1,31 @@
+
+<!-- surprise.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Surprise 🎉</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-rose-100 to-pink-200 text-center">
+  <div class="min-h-screen flex flex-col justify-center items-center p-8">
+    <h2 class="text-4xl font-bold text-pink-700 mb-4">My Final Birthday Wish For You 🎂</h2>
+    <p class="text-lg text-gray-700 max-w-xl mb-6">You deserve all the love, joy, and happiness this world has to offer. I’m lucky to have you, and I promise to keep making you smile. 💝</p>
+    <button onclick="launchConfetti()" class="px-6 py-3 bg-pink-500 text-white rounded-full font-semibold shadow hover:bg-pink-600">Celebrate With Me 🎊</button>
+    <p class="mt-6 text-sm text-gray-500">Made with ❤️ by someone who adores you.</p>
+  </div>
+
+  <script>
+    function launchConfetti() {
+      confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ff6b81', '#ff9ff3', '#feca57', '#48dbfb']
+      });
+    }
+  </script>
+</body>
+</html>
